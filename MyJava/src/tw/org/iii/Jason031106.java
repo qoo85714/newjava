@@ -9,7 +9,7 @@ public class Jason031106 {
 		p[dice>=6?dice-3:dice]++;
 	}
 	for (int i=0; i<p.length; i++){
-		System.out.println( (i+1) + "ÂI¥X²{" + p[i] + "¦¸");
+		System.out.println( (i+1) + "é»žå‡ºç¾" + p[i] + "æ¬¡");
 	}
 		
 	}

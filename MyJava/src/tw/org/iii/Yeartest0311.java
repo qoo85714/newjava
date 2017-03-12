@@ -7,7 +7,7 @@ public class Yeartest0311 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String input =
-				JOptionPane.showInputDialog("¿é¤J¦~¤À");
+				JOptionPane.showInputDialog("è«‹è¼¸å…¥å¹´åˆ†");
 		int year = Integer.parseInt(input);
 		if (year % 4 == 0){
 			if (year % 100 ==0){

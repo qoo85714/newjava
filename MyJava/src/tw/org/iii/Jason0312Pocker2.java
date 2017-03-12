@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Jason0312Pocker2 {
 
 	public static void main(String[] args) {
-		//¬~µP
+		//æ´—ç‰Œ
 		boolean[] check = new boolean[52];
 		int[] poker = new int[52];
 		int temp;
@@ -18,17 +18,17 @@ public class Jason0312Pocker2 {
 			check[temp] =true ;
 			//System.out.println(temp);
 		}
-		//µoµP=>¥|­Óª±=>¨C¤H13±i
+		//ç™¼ç‰Œ => å››å€‹ç©å®¶ => æ¯å®¶æœ‰13å¼µ
 		int[][]player=new int[4][13];
 		for(int i=0;i<poker.length;i++){
 			player[i%4][i/4] = poker[i];
 		}
 		System.out.println("---------");
-		//ÅuµP
-		String[] suits ={"¶Â®ç","¬õ¤ß","¤è¶ô","±öªá"};
+		//æ”¤ç‰Œ
+		String[] suits ={"é»‘æ¡ƒ","ç´…å¿ƒ","æ–¹å¡Š","æ¢…èŠ±"};
 		String[] values ={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
 		for(int [] cards:player){
-			//²zµP
+			//ï¿½zï¿½P
 			Arrays.sort(cards);
 			for(int card: cards){
 			   System.out.print(suits[card/13] + values[card%13]+ " ");
