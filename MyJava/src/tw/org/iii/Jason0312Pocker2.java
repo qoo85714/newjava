@@ -28,7 +28,7 @@ public class Jason0312Pocker2 {
 		String[] suits ={"黑桃","紅心","方塊","梅花"};
 		String[] values ={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
 		for(int [] cards:player){
-			//�z�P
+			//排序
 			Arrays.sort(cards);
 			for(int card: cards){
 			   System.out.print(suits[card/13] + values[card%13]+ " ");
