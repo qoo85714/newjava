@@ -1,12 +1,33 @@
 package tw.org.iii;
 
-import javax.swing.JFrame;
+import java.awt.BorderLayout;
 
-//import javax.swing.JFrame;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Jason031805 extends JFrame{
+	private JButton open, save, exit;
+	private MyPainter myPainter;
+	
 	Jason031805(){
+		
 		super("µøµ¡µ{¦¡");
+		setLayout(new BorderLayout());
+		open = new JButton("Open");
+		save = new JButton("Save");
+		exit = new JButton("Exit");
+		myPainter = new MyPainter();
+		
+		JPanel top = new JPanel(new FlowLayout());
+		top.add(open);top.add(save);top.add(exit);
+		
+		add(top,BorderLayout.NORTH);
+		add(myPainter, BorderLayout.CENTER);
+	  
+		
 		setSize(640, 480);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
