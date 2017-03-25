@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//dir1/Book1.csv=UTF-8
+encoding//dir1/file1.txt=UTF-8
+encoding//src/tw/org/iii=UTF-8
 encoding//src/tw/org/iii/Bike.java=UTF-8
 encoding//src/tw/org/iii/Hello.java=UTF-8
 encoding//src/tw/org/iii/Iftest0311.java=UTF-8
@@ -22,4 +25,8 @@ encoding//src/tw/org/iii/Jason031206.java=UTF-8
 encoding//src/tw/org/iii/Jason031207.java=UTF-8
 encoding//src/tw/org/iii/Jason0312Pocker.java=UTF-8
 encoding//src/tw/org/iii/Jason0312Pocker2.java=UTF-8
+encoding//src/tw/org/iii/Jason031805.java=UTF-8
+encoding//src/tw/org/iii/Jason032501.java=UTF-8
+encoding//src/tw/org/iii/Jason032502.java=UTF-8
+encoding//src/tw/org/iii/MyPainter.java=UTF-8
 encoding//src/tw/org/iii/Yeartest0311.java=UTF-8

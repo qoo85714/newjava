@@ -4,6 +4,7 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -11,11 +12,18 @@ import javax.swing.JPanel;
 
 public class MyPainter extends JPanel implements MouseListener{
 	private int x0 , y0 ,x1 ,y1,x ,y ,w,h;
+	private MyMouseAdapter myMouseAdapter;
 	public MyPainter(){
 		setBackground(Color.yellow);
 		addMouseListener(this);
+		//addMouseListener = new MyMouseAdapter(this);
+		addMouseListener(myMouseAdapter);
 		
 	}
+	
+//	void setX0(int x0){this.x0=x0}
+//	void setX0(int x0){this.x0=x0}
+//	
     @Override
     protected void paintComponent(Graphics g) {
     	super.paintComponent(g);
@@ -30,6 +38,9 @@ public class MyPainter extends JPanel implements MouseListener{
     	g2d.drawOval(x,y,w,h);
     	
     	//System.out.println(("paint"));
+    	
+    }
+    void changeLine(int x1,int y1){
     	
     }
 	@Override
@@ -64,3 +75,38 @@ public class MyPainter extends JPanel implements MouseListener{
 	}
       
 }
+
+
+class MyMouseAdapter extends MouseAdapter {
+	private MyPainter painter;
+	public MyMouseAdapter(MyPainter painter){
+		this.painter = painter;
+	}
+	
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		super.mousePressed(e);
+		
+		//x0 = e.getX(); y0 = e.getY();
+	}
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		super.mouseReleased(e);
+//		int x1 =e.getX();y1 = e.getY();
+//		painter.changeLine(x1, y1);
+				
+		
+		
+		
+	}
+	
+	
+	
+
+	
+	
+}
+
+

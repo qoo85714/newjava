@@ -14,7 +14,7 @@ public class Jason031805 extends JFrame{
 	
 	Jason031805(){
 		
-		super("µøµ¡µ{¦¡");
+		super("è¦–çª—ç¨‹å¼");
 		setLayout(new BorderLayout());
 		open = new JButton("Open");
 		save = new JButton("Save");
