@@ -1,19 +1,15 @@
 package tw.org.iii;
-/*
- * 
- 
+
 public class Jason032503 {
 	public static void main(String[] args) {
 		Bird b1 = new Bird();
-		int n = 2;
+		int n = 4;
 		try{
-		b1.setLeg(n);
+			b1.setLeg(n);
 		}catch(MyException ee){
 			System.out.println(ee.toString());
 		}catch(MyException2 ee){
 			System.out.println(ee.toString());
-		}catch(Exception ee){
-			//System.out.println(ee.toString());
 		}
 		System.out.println("End");
 	}
@@ -30,10 +26,16 @@ class Bird{
 	}
 }
 class MyException extends Exception{
-	public String toString(){
-		
-		
+	@Override
+	public String toString() {
+		return "哪有欠人家腳的";
+	}
+}
+class MyException2 extends Exception{
+	@Override
+	public String toString() {
+		return "變種鳥嗎";
 	}
 }
 
-*/
+
