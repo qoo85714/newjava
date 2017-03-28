@@ -13,5 +13,5 @@ class Jason461 {
 	void m1() throws IOException {}
 }
 class Jason462 extends Jason461 {
-	void m1() throws RemoteException {}
+	void m1() throws RemoteException {}//繼承後的例外需比父類別範圍小或一樣
 }
