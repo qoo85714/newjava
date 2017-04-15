@@ -34,10 +34,10 @@ public class Jason040809 {
 	}
 
 }
-class Brad611 implements Serializable{
+class Brad611 implements Serializable {
 	Brad611(){System.out.println("Brad611()");}
 }
-class Brad612 extends Brad611 {
+class Brad612 extends Brad611  {
 	Brad612(){System.out.println("Brad612()");}
 }
 class Brad613 extends Brad612 {

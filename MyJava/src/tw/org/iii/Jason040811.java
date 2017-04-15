@@ -14,7 +14,7 @@ public class Jason040811 {
 		try {
 			DatagramSocket socket = new DatagramSocket();
 			DatagramPacket packet = new DatagramPacket(sendData, sendData.length,
-					InetAddress.getByName("127.0.0.1"),8888);
+					InetAddress.getByName("10.2.24.149"),4567);
 			socket.send(packet);
 			socket.close();
 			System.out.println("OK");
